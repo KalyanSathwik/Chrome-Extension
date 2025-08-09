@@ -6,9 +6,16 @@ body{
 
 #input-el{
     border: 2px solid #5f9341;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
 }
 #input-btn{
+    font-weight: bold;
     color: white;
-    border: 2px solid greenyellow;
-    background-color: greenyellow;
+    border: 2px solid #5f9341;
+    background-color: #5f9341;
+    padding: 10px 20px;
 }
