@@ -6,9 +6,12 @@ const ulEl = document.getElementById("ul-el")
 function save(){
     console.log("Button Clicked by onclick\n")
 }
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+console.log(leadsFromLocalStorage)
 
 inputbtn.addEventListener("click", function() {
     // console.log("Button clicked by eventlistener")
+    // myLeads = JSON.parse(myLeads)
     myLeads.push(inputEl.value)
     // Method 1
     // ulEl.innerHTML += "<li>" + inputLead + "</li>"
@@ -19,6 +22,11 @@ inputbtn.addEventListener("click", function() {
     // const li = document.createElement("li")
     // li.textContent = inputLead
     // ulEl.append(li)
+
+    // Using the localStorage : 
+    
+    localStorage.setItem("myLeads",JSON.stringify(myLeads))
+    // console.log(localStorage.getItem("myLeads"))
     renderLeads()
     inputEl.value = ""
 
