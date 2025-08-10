@@ -1,0 +1,10 @@
+body{
+    box-sizing: border-box;
+}
+
+#box-el{
+    margin-left: 25vw ;
+    padding: 50px;
+    background-color: aquamarine;
+    width : 100vh;
+}
